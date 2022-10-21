@@ -1,0 +1,45 @@
+<head>
+    <style>
+      input {
+        height: 30px;
+        padding-left: 10px;
+        border-radius: 4px;
+        border: 1px solid rgb(186, 178, 178);
+        box-shadow: 0px 0px 12px #EFEFEF;
+      }
+    </style>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLrrrVK8iu9MLBQCaE3mGPpxYpjSSTfUg&libraries=places"></script>
+
+</head>
+
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <h1>Heloo helo hello</h1>
+        <form method = "POST">
+            {{form.hidden_tag()}}
+<!--            For HTML, id is local nomenclature, the name is what is referenced in the backend-->
+            {{ form.address(type="text", id="autocomplete", placeholder= "Search for Address...") }}
+            <script>
+                const options = {
+                    types: ['address']
+                }
+                var input = document.getElementById('autocomplete');
+                var autocomplete = new google.maps.places.Autocomplete(input, options);
+                // google.maps.event.addListener(autocomplete, 'place_changed', function(){
+                //     var place = autocomplete.getPlace();})
+            </script>
+
+            <br>
+
+            {{ form.contact_details(placeholder = "Enter email or phone number") }}
+
+            <br>
+            
+            <input type = "submit" id = "submit" name="submit" value="Go!" class = "btn btn-info">
+
+        </form>
+
+{% endblock %}

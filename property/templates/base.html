@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ name }}</title>
+  </head>
+  <body>
+
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for cat, message in messages %}
+                    <div class="alert alert-{{ cat }}">
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        {{message}}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+    <div id="container">
+      <!-- Jinja directives: page contents will go between them -->
+      {% block body %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

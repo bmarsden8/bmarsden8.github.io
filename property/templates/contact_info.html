@@ -1,0 +1,24 @@
+{% block body %}
+
+    <h1>Heloo helo hello contact info form to come</h1>
+
+    <div class="container">
+        <form method="POST" style = "color:white">
+
+            {{ form.hidden_tag() }}
+
+            <h1 class="h3 mb-3 font-weight-normal">
+                    Provide contact details for {address}
+                </h1>
+
+                <br>
+
+                {{ form.contact_details.label() }}
+                {{ form.contact_details(class="form-control", placeholder = "contact-details") }}
+                <br>
+                <br>
+
+                {{ form.submit(class="btn btn-primary btn-lg", value = "Sign In") }}
+        </form>
+
+{% endblock %}
