@@ -1,0 +1,89 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    {% extends 'base.html' %}
+
+    {% block title %}
+        Parcel - Successful Enrollment
+    {% endblock %}
+
+</head>
+
+
+{% block body %}
+
+<main class="bg-light">
+<header class="py-5">
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xxl-6">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder mb-3">Our mission is to make it easy for everyone to understand their property tax bill.</h1>
+                    <p class="lead fw-normal mb-5">Parcel was built on the idea that the tax code should be transparent.</p>
+                    <a class="btn btn-primary btn-lg" href={{url_for('home_page')}}>View my deductions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+ <section class="py-1" id="scroll-target">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="https://iili.io/mQ3H2j.png" alt="..." /></div>
+            <div class="col-lg-6">
+                <h2 class="fw-bolder">Our founding story</h2>
+                <p class="lead mb-0">We were just like you, late on our payments and with an opaque bill. We wanted to bulid a service we would use, and share with anyone else who could benefit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--&lt;!&ndash; Team members section&ndash;&gt;-->
+<!--&lt;!&ndash;            Py sets boundaries from previous section&ndash;&gt;-->
+<!--            <section class="py-5 bg-light">-->
+<!--&lt;!&ndash;                Px sets boundaries from previous section; my sets boundaries from edge&ndash;&gt;-->
+<!--                <div class="container px-5 my-5">-->
+<!--                    <div class="text-center">-->
+<!--                        <h2 class="fw-bolder">Our team</h2>-->
+<!--&lt;!&ndash;                    Mb sets boundaries to next item (faces from the text)&ndash;&gt;-->
+<!--                        <p class="lead fw-normal text-muted mb-5">Dedicated to quality and your success</p>-->
+<!--                    </div>-->
+<!--&lt;!&ndash;                Gx sets boundaries from edge, row-col-sm(tablets) means 1 per row, row-col-xl (large desktops) means 4 per row &ndash;&gt;-->
+<!--                    <div class="row gx-5 row-cols-2 row-cols-sm-1 row-cols-xl-4 justify-content-center">-->
+<!--                        <div class="col mb-5 mb-5 mb-xl-0">-->
+<!--                            <div class="text-center">-->
+<!--                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />-->
+<!--                                <h5 class="fw-bolder">Ibbie Eckart</h5>-->
+<!--                                <div class="fst-italic text-muted">Founder &amp; CEO</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--&lt;!&ndash;                        mb-xl specifies mb for l screens (large desktops), m for desktops, s for tablets, xs for phones&ndash;&gt;-->
+<!--                        <div class="col mb-5 mb-5 mb-xl-0">-->
+<!--                            <div class="text-center">-->
+<!--                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />-->
+<!--                                <h5 class="fw-bolder">Arden Vasek</h5>-->
+<!--                                <div class="fst-italic text-muted">CFO</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col mb-5 mb-5 mb-sm-0">-->
+<!--                            <div class="text-center">-->
+<!--                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />-->
+<!--                                <h5 class="fw-bolder">Toribio Nerthus</h5>-->
+<!--                                <div class="fst-italic text-muted">Operations Manager</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col mb-5">-->
+<!--                            <div class="text-center">-->
+<!--                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />-->
+<!--                                <h5 class="fw-bolder">Malvina Cilla</h5>-->
+<!--                                <div class="fst-italic text-muted">CTO</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+<!--        </main>-->
+
+
+{% endblock %}
+

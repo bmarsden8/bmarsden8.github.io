@@ -42,3 +42,12 @@ def home_page():
 @app.route("/success")
 def success_page():
     return render_template('success.html')
+
+
+@app.route("/about")
+def about_page():
+    return render_template('about.html')
+
+@app.route("/faq")
+def faq_page():
+    return render_template('faq.html')

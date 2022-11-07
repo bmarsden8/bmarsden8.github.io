@@ -1,6 +1,27 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    {% extends 'base.html' %}
+
+    {% block title %}
+        Parcel - Successful Enrollment
+    {% endblock %}
+
+</head>
+
+
 {% block body %}
-
-    <h1>Heloo helo hello success</h1>
-
-
+<main class="bg-white">
+<br><br><br><br><br>
+<section class="bg-white py-5">
+    <div class="container ">
+        <div class="text-center">
+            <h1 class="fw-bolder">Success!</h1>
+            <br>
+            <p class="lead fw-normal text-muted mb-0">We have recieved your information. We are analyzing</p>
+            <p class="lead fw-normal text-muted mb-0">your property tax bill and will contact you with recommendations.</p>
+        </div>
+    </div>
+    </div>
+</section>
+</main>
 {% endblock %}
